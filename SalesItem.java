@@ -5,7 +5,7 @@ import java.util.Iterator;
  * The class represents sales items on an online e-commerce site. SalesItem 
  * objects store all information relevant to this item, including description,
  * price, customer comments, etc.
- * 
+ *  
  * NOTE: The current version is incomplete! Currently, only code dealing with
  * customer comments is here.
  * 
