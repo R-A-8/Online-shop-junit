@@ -56,7 +56,8 @@ public class SalesItemTest
     public void testIllegalRating()
     {
         SalesItem salesIte1 = new SalesItem("Java For Complete Idiots, Vol 2", 19900);
-        assertEquals(false, salesIte1.addComment("Joshua Black", "Not worth the money. The font is too small.", -5));
+        assertEquals(false, salesIte1.addComment("Joshua Black", "Not worth the money. The font is too small.", -1));
+        assertEquals(false, salesIte1.addComment("Joshua Black", "Not worth the money. The font is too small.", 6));
     }
 
     /**
