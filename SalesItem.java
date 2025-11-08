@@ -52,6 +52,7 @@ public class SalesItem
         return comments.size();
     }
     
+    
     /**
      * Add a comment to the comment list of this sales item. Return true if
      * successful; false if the comment was rejected.
@@ -124,7 +125,7 @@ public class SalesItem
         System.out.println();
         System.out.println("===========================================");
     }
-    
+     
     /**
      * Return the most helpful comment. The most useful comment is the one with
      * the highest vote balance. If there are multiple comments with equal 
