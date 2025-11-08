@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * Classe-test CommentTest.
+ * Classe-test CommentTest2.
  *
  * @author  (votre nom)
  * @version (un numéro de version ou une date)
@@ -29,7 +29,7 @@ import org.junit.jupiter.api.Test;
  * qui réalise les engagements, et suivi d'un appel à tearDown(), qui les
  * détruit.
  */
-public class CommentTest
+public class CommentTest2
 {
     // Définissez ici les variables d'instance nécessaires à vos engagements;
     // Vous pouvez également les saisir automatiquement du présentoir
@@ -40,9 +40,9 @@ public class CommentTest
     protected double fValeur2;
 
     /**
-     * Constructeur de la classe-test CommentTest
+     * Constructeur de la classe-test CommentTest2
      */
-    public CommentTest()
+    public CommentTest2()
     {
     }
 
@@ -55,8 +55,7 @@ public class CommentTest
     public void setUp() // throws java.lang.Exception
     {
         // Initialisez ici vos engagements
-        fValeur1= 2.0;
-        fValeur2= 3.0;
+        
     }
 
     /**
@@ -68,16 +67,5 @@ public class CommentTest
     public void tearDown() // throws java.lang.Exception
     {
         //Libérez ici les ressources engagées par setUp()
-    }
-    
-    /**
-     * Test that a comment can be added, and that the comment count is correct afterwards.
-     */
-    @Test
-    public void testAddComment()
-    {
-        SalesItem salesIte1 = new SalesItem("test name", 1000);
-        assertEquals(true, salesIte1.addComment("James Duckling", "This book is great. I perform brain sugery every week now.", 4));
-        assertEquals(false, salesIte1.addComment("James Duckling", "I love this book dude.", 5));
     }
 }

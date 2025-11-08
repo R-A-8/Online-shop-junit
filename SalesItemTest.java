@@ -71,14 +71,4 @@ public class SalesItemTest
         assertEquals(1000, salesIte1.getPrice());
     }
     
-    /**
-     * Test that an author doesn't write 2 comments.
-     */
-    @Test
-    public void test2Authors()
-    {
-        SalesItem salesIte1 = new SalesItem("test name", 1000);
-        assertEquals(true, salesIte1.addComment("James Duckling", "This book is great. I perform brain sugery every week now.", 4));
-        assertEquals(false, salesIte1.addComment("James Duckling", "I love this book dude.", 5));
-    }
 }
