@@ -16,3 +16,10 @@ a test class that demonstrates some of the testing functionality. Testing is fur
 discussed in the book.
 
 NOTE: There are several serious errors to be found in these classes.
+
+Part 2:
+
+14. The setUp method and the tearDown method.
+  
+
+Reminder  do question 29 and 30.
