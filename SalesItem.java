@@ -132,7 +132,7 @@ public class SalesItem
      * highest balance, return any one of them.
      */
     public Comment findMostHelpfulComment()
-    {
+    { 
         Iterator<Comment> it = comments.iterator();
         Comment best = it.next();
         while(it.hasNext()) {

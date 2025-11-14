@@ -71,4 +71,23 @@ public class SalesItemTest
         assertEquals(1000, salesIte1.getPrice());
     }
     
+
+    @Test
+    public void isCommentHelpful()
+    {
+        SalesItem salesIte1 = new SalesItem("Book", 25);
+        salesIte1.addComment("Chelsea", "Great book!", 5);
+        salesIte1.addComment("John", "ew", 1);
+        
+        salesIte1.upvoteComment(0);
+        salesIte1.upvoteComment(0);
+        salesIte1.upvoteComment(1);
+        
+        
+        Comment mostHelpful = salesIte1.findMostHelpfulComment();
+        
+    }
 }
+
+
+
